@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+* {
+    
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Roboto;
+    margin: 0;
+    /* background-color:#eee; */
+    padding: 0;
+}
+.logo {
+    width: 50px;
+}
+.header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+}
+.head {
+    display: flex;
+    background-color:  #15605e;
+    color: #fff;
+    padding:2rem;
+    justify-content: space-between;
+    
+}
+.log{
+    background: rgba(26, 177, 133, 0.64);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(26, 177, 133, 0.15);
+}
+
+.restaurant-list{
+    padding-top: 50px;
+}
+
+
+
+.nav-items ul{
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+   
+}
+.nav-items ul li{
+    list-style: none;
+    
+    
+} 
+
+.linktag{
+    color: white;
+    text-decoration: none;
+    
+}
+.restaurant-list{
+    width:90%;
+    margin:2rem  auto;
+    margin-top: 0rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 1rem;
+}
+.card {
+    padding: 1rem;
+    width:200px;  
+background: rgba(84, 164, 137, 0.195);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(145, 218, 194, 0.15);
+    height: 30rem;
+    position: relative;
+}
+
+
+.btn{
+    background-color: black;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    width: 2rem;
+}
+.add{
+    background-color: rgba(143, 232, 202, 0.858);
+}
+.minus
+{
+    background-color: rgb(216, 71, 71);
+}
+
+.cntorders{
+    border: 1px solid black;
+    background-color: black;
+    width: 2.5rem;
+    color: white;
+    padding-left: 2rem;
+    border-radius: 5px;
+}
+
+
+.ratings {
+    display:flex;
+    justify-content:space-between;
+    border-radius:5px;
+    margin-top:1rem;
+}
+.card > img {
+    width: 100%;
+    border-radius:5px;
+    
+}
+.cardcomp{
+    text-decoration: none;
+    color: black;
+} /* dekho bhai tumne yha pr cardcomp m text ko change krne ki koshish ki but whenever wo eke link m enclose ho jata hai always use ur css properties on those link tags*/
+.footer {
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+    background-color:#15605e;
+    color:white;
+}
+
+ .abc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menucomp{
+    display: flex;
+    margin: 50px;
+    
+}
+
+.menucomp p{
+   display: flex;
+   margin-left: 20px;
+   
+}
+
+.searchbtn
+{
+    border-radius: 7px;
+    padding: 10px;
+    margin: 2px;
+
+    background-color: rgb(161, 161, 221,0.3);
+    border-style: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgb(161, 161, 221,0.3);
+    border-style: none;
+}
+
+.headbtn{
+    border:none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 7rem;
+    color: white;
+    background-color: #15605e;;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+.topres{
+    border-radius: 7px;
+    padding: 9px;
+    margin: 2px;
+    margin-left: 10px;
+    margin-right: 14px;
+    background-color: rgba(204, 42, 137, 0.3);
+    border-style: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(204, 42, 137, 0.3);
+}
+
+.searchinput{
+    border-radius: 7px;
+    padding: 7.5px;
+    width: 20rem;
+    border-color: rgba(0, 0, 0, 0.473);
+    outline: none;
+}
+
+.topres:hover{
+    cursor: pointer;
+    background-color: rgba(204, 42, 137, 0.6);
+}
+
+.searchbtn:hover{
+    cursor:pointer;
+    background-color: rgb(161, 161, 221,0.6);
+}
+
+
+.headimg{
+  
+    height:34vw;
+    
+    z-index:1;
+    padding: 2rem;
+    margin-top: 130px;
+    margin-left:20rem;
+    margin-bottom: 2rem;
+    /* margin-top: 1rem; */
+
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20240413/pngtree-spaghetti-or-pasta-with-tomato-sauce-and-fresh-green-basil-on-image_15714501.jpg') no-repeat border-box;
+    background-size: contain;
+    position: relative;
+}
+
+.content{
+    color:whitesmoke;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  
+  
+    max-width: 50%;
+    bottom: 1%;
+    left: 1%;;
+
+}
+
+.content h2{
+    font-weight: 600;
+    margin-bottom: -5px;
+    font-size:max(2.25vw,15px) ;
+   
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
+
+.Iteminfo{
+    background: rgba(190, 214, 209, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(190, 214, 209, 0.15)
+}
+.itemList{
+    background: rgba(16, 198, 220, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(16, 198, 220, 0.15);
+}
+
+.loin-popup{
+    position:absolute;
+    z-index:1;
+   
+    width: 100%;
+    height:100%;
+    background-color: #00000090;
+    display: grid;
+}
+.login-popup-container{
+    margin-left: 36%;
+    width: max(23vw,330px);
+    color: #808080;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding: 25px 30px;
+    margin-top: 10%;
+    margin-bottom: 25%;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 1.5s;
+}
+
+.login-popup-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.login-popup-title img{
+    width: 16px;
+    cursor:pointer;
+}
+.login-popup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.login-popup-inputs input{
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.login-popup-container button{
+    border:none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor:pointer;
+
+}
+
+.login-popup-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-popup-condition input{
+    margin-top: 5px;
+}
+
+.login-popup p span{
+    color: tomato;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart{
+    margin-top: 225px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,12px);
+}
+.cart-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+
+.cart-items-item img{
+    width:50px;
+    
+}
+
+.cart hr{
+height: 1px;
+background-color: #e2e2e2;
+border: none;
+}
+.cart-items-item .cross{
+    cursor: pointer;
+}
+
+.cart-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+.cart-total{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-total-details{
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.cart-total hr{
+    margin:5px 0px;
+}
+
+.cart-total button{
+    border: none;
+    color: white;
+    background-color: tomato;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-promocode{
+    flex: 1;
+}
+.cart-promocode p{
+    color: #555;
+
+}
+
+.cart-promocode input{
+    margin-top: 10px;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+
+}
+
+.cart-promocode-input input{
+    /* background: transparent; */
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 12rem;
+}
+.cart-promocode-input button{
+    width: 8rem;
+    padding: 12px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.upper{
+    margin-top: 10rem;
+    display: flex;
+    width: 61rem;
+    
+    margin-left: 18.5rem;
+    background: rgba(255, 99, 71, 0.54);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 99, 71, 1);
+    
+}
+.upper img{
+    border-radius: 10px;
+    width: 15rem;
+    padding:10px ;
+    padding-left: 25px;
+}
+.lower{
+    margin-top: 2rem;
+    width: 20rem;
+    margin-left: 2rem;
+}
+.lowerinfo{
+    display: flex;
+    justify-content: space-between;
+}
+.returnbtn{
+    margin-left: 42rem;
+    position: absolute;
+    bottom: 25%;
+    padding: 10px;
+    outline: none;
+    background: rgba(118, 66, 150, 0.249);
+    font-size: medium;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(118, 66, 150, 0.3);
+cursor: pointer;
+
+}
+
+.allbtn{
+    outline: none;
+    background: rgba(39, 131, 157, 0.3);
+    font-size: 0.95rem;
+border-radius: 5px;
+padding: 6.1px;
+margin-left: 10rem;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(39, 131, 157, 0.3);
+cursor: pointer;
+}
+.allbtn:hover{
+    background: rgba(39, 131, 157, 0.6);
+}
+
+.returnbtn:hover{
+    background: rgba(118, 66, 150, 0.649)
+    
+}
